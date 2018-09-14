@@ -14,7 +14,7 @@ SelectedBeerView.prototype.bindEvents = function(){
   this.element.addEventListener('change', (event) => {
     const selectedIndex = event.target.value;
     console.log(selectedIndex);
-    PubSub.publish('SelectedBeer:selected-beer', selectIndex);
+    PubSub.publish('SelectedBeer:selected-beer', selectedIndex);
   });
 }
 SelectedBeerView.prototype.populate = function(allBeers){

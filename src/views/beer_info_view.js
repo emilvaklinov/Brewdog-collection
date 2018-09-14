@@ -16,6 +16,9 @@ BeerInfoView.prototype.render = function(beer){
 
   const beerName = this.createTextElement('h3', beer.name)
   this.container.appendChild(beerName);
+
+  const beerTaglineHeader = this.createTextElement('h4', 'Tagline:');
+  this.container.appendChild(beerTaglineHeader);
 }
 
 

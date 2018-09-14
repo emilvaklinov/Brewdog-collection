@@ -11,7 +11,7 @@ const allBeers = new AllBeers();
 allBeers.bindEvents();
 allBeers.getData();
 
-const selectElement = document.querySelector('slelect#beers');
+const selectElement = document.querySelector('select#beers');
 const beerDropdown = new SelectedBeerView(selectElement);
 beerDropdown.bindEvents();
 
