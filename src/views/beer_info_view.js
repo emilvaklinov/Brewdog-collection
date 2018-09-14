@@ -14,11 +14,21 @@ BeerInfoView.prototype.bindEvents = function() {
 BeerInfoView.prototype.render = function(beer){
   this.container.innerHTML = '';
 
+  const beerImg = document.createElement('img');
+  beerImg.src = beer.image_url;
+  this.container.appendChild(beerImg);
+
+  const beerNameHeader = this.createTextElement('h4', 'Name:');
+  this.container.appendChild(beerNameHeader);
+
   const beerName = this.createTextElement('h3', beer.name)
   this.container.appendChild(beerName);
 
-  const beerTaglineHeader = this.createTextElement('h4', 'Tagline:');
+  const beerTaglineHeader = this.createTextElement('h5', 'Tagline:');
   this.container.appendChild(beerTaglineHeader);
+
+  const beerTagline = this.createTextElement('p', beer.tagline)
+  this.container.appendChild(beerTagline);
 }
 
 
