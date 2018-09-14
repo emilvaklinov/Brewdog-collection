@@ -1,3 +1,5 @@
+const PubSub = require('../helpers/pub_sub.js');
+
 const BeerInfoView = function (container) {
   this.container = container;
 }
@@ -8,3 +10,19 @@ BeerInfoView.prototype.bindEvents = function() {
     this.render(selectedBeer);
   })
 }
+
+BeerInfoView.prototype.render = function(beer){
+  this.container.innerHTML = '';
+
+  const beerName = this.createTextElement('h3', beer.name)
+  this.container.appendChild(beerName);
+}
+
+
+BeerInfoView.prototype.createTextElement = function (elementType, text) {
+  const element = document.createElement(elementType);
+  element.textContent = text;
+  return element;
+}
+
+module.exports = BeerInfoView;

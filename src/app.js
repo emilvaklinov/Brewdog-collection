@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript Loaded');
 
 
-const allBeers = new allBeers();
+const allBeers = new AllBeers();
 allBeers.bindEvents();
 allBeers.getData();
 
@@ -18,3 +18,4 @@ beerDropdown.bindEvents();
 const beerInfoContainer = document.querySelector('div#beer');
 const beerInfoView = new BeerInfoView(beerInfoContainer);
 beerInfoView.bindEvents();
+});

@@ -12,7 +12,7 @@ SelectedBeerView.prototype.bindEvents = function(){
   });
 
   this.element.addEventListener('change', (event) => {
-    const selectIndex = event.target.value;
+    const selectedIndex = event.target.value;
     console.log(selectedIndex);
     PubSub.publish('SelectedBeer:selected-beer', selectIndex);
   });

@@ -13,7 +13,7 @@ AllBeers.prototype.getData = function () {
   });
 };
 
-allBeers.prototype.bindEvents = function (){
+AllBeers.prototype.bindEvents = function (){
   PubSub.subscribe('SelectedBeer:selected-beer', event => {
     const selectedIndex = event.detail;
     const SelectedBeer = this.data[selectedIndex];
