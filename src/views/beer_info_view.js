@@ -18,8 +18,8 @@ BeerInfoView.prototype.render = function(beer){
   beerImg.src = beer.image_url;
   this.container.appendChild(beerImg);
 
-  const beerNameHeader = this.createTextElement('h4', 'Name:');
-  this.container.appendChild(beerNameHeader);
+  // const beerNameHeader = this.createTextElement('h4', 'Name:');
+  // this.container.appendChild(beerNameHeader);
 
   const beerName = this.createTextElement('h3', beer.name)
   this.container.appendChild(beerName);

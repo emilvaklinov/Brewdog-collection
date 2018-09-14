@@ -1,13 +1,21 @@
 body {
   background-color: skyblue;
+  background-image: url("./images/brewdog_banner.png");
+  text-align: center;
 }
 
 img {
-    max-width: 200px;
-    max-height: 300px;
-    padding-left: 400px;
+  width: 10%;
+  height: auto;
+  padding-top: 15px;
 }
 
-h3, h4,, h5, p {
+h1 {
+color: darkred;
+font-family: helvetica;
+text-transform: uppercase;
+}
 
+h3 {
+color: darkgreen;
 }
