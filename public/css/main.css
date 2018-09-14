@@ -7,15 +7,31 @@ body {
 img {
   width: 10%;
   height: auto;
-  padding-top: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 h1 {
 color: darkred;
-font-family: helvetica;
+font-family: Merriweather;
 text-transform: uppercase;
 }
 
 h3 {
 color: darkgreen;
+text-transform: uppercase;
+}
+
+select#beers {
+  cursor: pointer;
+  width: 150px;
+}
+
+h5 {
+    font-family: fantasy;
+    color: black;
+    background-color: white;
+    background-clip: content-box;
+    padding-left: 250px;
+    padding-right: 250px;
 }

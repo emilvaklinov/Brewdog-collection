@@ -18,17 +18,21 @@ BeerInfoView.prototype.render = function(beer){
   beerImg.src = beer.image_url;
   this.container.appendChild(beerImg);
 
-  // const beerNameHeader = this.createTextElement('h4', 'Name:');
-  // this.container.appendChild(beerNameHeader);
-
   const beerName = this.createTextElement('h3', beer.name)
   this.container.appendChild(beerName);
 
-  const beerTaglineHeader = this.createTextElement('h5', 'Tagline:');
+  const beerAbv = this.createTextElement('h4', "Abv " + beer.abv +"%")
+  this.container.appendChild(beerAbv);
+
+  const beerTaglineHeader = this.createTextElement('h4', 'Tagline: ' + beer.tagline);
   this.container.appendChild(beerTaglineHeader);
 
-  const beerTagline = this.createTextElement('p', beer.tagline)
-  this.container.appendChild(beerTagline);
+  const beerDescription = this.createTextElement('h5', beer.description)
+  this.container.appendChild(beerDescription);
+
+  const beerFoodPairing = this.createTextElement('h5', 'Food pairing: ' + beer.food_pairing)
+  this.container.appendChild(beerFoodPairing);
+
 }
 
 
