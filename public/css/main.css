@@ -18,6 +18,10 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  color: white;
+}
+
 h3 {
   color: darkgreen;
   text-transform: uppercase;
@@ -41,4 +45,11 @@ h5 {
   text-align:right;
   width:auto;
   height:auto;
+}
+
+.primary {
+  color: #ffffcc;
+}
+label.primary {
+  padding-top: 2px;
 }

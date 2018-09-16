@@ -1,0 +1,103 @@
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#added {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align-last: center;
+  border-collapse: collapse;
+  margin-left: 190px;
+  color: #683e05;
+  text-decoration: underline;
+
+
+}
+
+label.primary {
+  display: block;
+  width: 500px;
+}
+
+legend { width: 500px;
+  color: #af2116;
+  text-decoration: underline;
+}
+button {
+  border-radius: 5%;
+  padding: 5px 5px;
+  color: #e83d05;
+  font-weight: bold;
+  border: 0px none;
+  border-radius: 5%;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.input {
+  border: 10px none;
+  border-radius: 5%;
+  padding: 5px 5px;
+}
+
+input {
+  margin: .10rem;
+  border-radius: 5%;
+  padding: 5px 5px;
+
+}
+
+element.style {
+  height: 50px;
+  width: 700px;
+}
+
+h1 { text-align: center;
+  text-transform: uppercase;
+
+}
+h2 {
+  font-family: 'Special Elite', cursive;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 1.8em;
+  color: dark;
+  margin-bottom: 20px;
+  text-decoration: underline;
+
+}
+
+div.form-visitor{
+  flex-direction: row;
+
+}
+div { width: 500px;
+}
+
+div#txt{
+  color: #c5f1f7;
+}
+
+ul#added {
+  /* text-align: center; */
+  width: 1500px;
+
+}
+input#submit{
+  font-weight: bold;
+  color: #0ea035;
+  display: flex;
+  flex-direction: column;
+  margin-left: 215px;
+  border: 0px none;
+  border-radius: 5%;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+}

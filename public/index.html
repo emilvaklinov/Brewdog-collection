@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-</html>
+<!-- </html> -->
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -25,4 +25,100 @@
   </select>
   <div id="beer"><div>
   </body>
+
+  <!-- <head>
+
+  </head> -->
+   </html>
+
+   <head>
+    <meta charset="utf-8">
+    <title>Buy now</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/app.js"></script>
+  </head>
+
+  <h2> Buy now </h2>
+
+  <form id="new-visitor-form">
+    <div id="form-wrapper">
+      <div class="form-visitor">
+        <label for="first_name" class="primary">First Name:</label>
+        <input type="text" id="first_name" required/>
+      </div>
+
+      <div class="form-visitor" class="w3-hover-green">
+
+        <label for="last_name" class="primary">Last Name:</label>
+        <input type="text" id="last_name" required/>
+      </div>
+
+      <div class="form-visitor">
+        <label for="address" class="primary">Address:</label>
+        <input type="text" id="address" required/>
+      </div>
+
+      <div class="form-visitor">
+        <label for="beer" class="primary">Beer:</label>
+        <input type="text" id="beer" required/>
+      </div>
+
+      <div class="form-visitor">
+        <label for="quantity" class="primary">Quantity:</label>
+        <select id="quantity" required/>
+        <option value="" disabled selected></option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+
+
+  <legend>Select payment</legend>
+
+  <div>
+    <input type="radio" id="cash" name="payment" value="by cash" checked />
+    <label for="cash">Cash</label>
+  </div>
+
+  <div>
+    <input type="radio" id="card" name="payment" value=" by card"/>
+    <label for="card">Card</label>
+  </div>
+
+  <div>
+    <input type="radio" id="bitcoin" name="payment" value="by bitcoin"/>
+    <label for="bitcoin">Bitcoin</label>
+  </div>
+
+  <div>
+      <label for="date" class="primary">Delivery day:</label>
+    <input type="text" id="date" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date" value="DD-MM-YYYY">
+    <script>
+
+    </script>
+  </div>
+
+  </div>
+  </div>
+
+  <p></p>
+  <input type="submit" id="submit" value="Submit"/>
+  <p></p>
+
+  </form>
+  <button id="delete" type="button">Delete</button>
+  <p></p>
+  <h2>Purchesed</h2>
+  <div id="visitors"></div>
+  <div>
+    <ul id="added"></ul>
+  </div>
+
+  </body>
+
+
   </html>
