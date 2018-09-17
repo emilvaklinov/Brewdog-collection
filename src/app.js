@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript Loaded');
 
 
-const allBeers = new AllBeers();
-allBeers.bindEvents();
-allBeers.getData();
+  const allBeers = new AllBeers();
+  allBeers.bindEvents();
+  allBeers.getData();
 
-const selectElement = document.querySelector('select#beers');
-const beerDropdown = new SelectedBeerView(selectElement);
-beerDropdown.bindEvents();
+  const selectElement = document.querySelector('select#beers');
+  const beerDropdown = new SelectedBeerView(selectElement);
+  beerDropdown.bindEvents();
 
-const beerInfoContainer = document.querySelector('div#beer');
-const beerInfoView = new BeerInfoView(beerInfoContainer);
-beerInfoView.bindEvents();
+  const beerInfoContainer = document.querySelector('div#beer');
+  const beerInfoView = new BeerInfoView(beerInfoContainer);
+  beerInfoView.bindEvents();
 
 
 
@@ -27,10 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const newVisitorForm = document.querySelector('#new-visitor-form');
   newVisitorForm.addEventListener('submit', handleNewVisitorFormSubmit);
   // console.log('JavaScript loaded');
-  const button = document.querySelector('#delete');
-  button.addEventListener('click', handleDelleteButtonClick);
+  // const button = document.querySelector('#delete');
+  // button.addEventListener('click', handleDelleteButtonClick);
 
-// });
+});
+
 const handleNewVisitorFormSubmit = function (event) {
   event.preventDefault();
   let paragraphResult = document.createElement('added');
@@ -51,5 +52,4 @@ const handleNewVisitorFormSubmit = function (event) {
   added.appendChild(paragraphResult);
   document.querySelector('#new-visitor-form');
 
-}
-});
+};
