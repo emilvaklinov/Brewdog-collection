@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const newVisitorForm = document.querySelector('#new-visitor-form');
   newVisitorForm.addEventListener('submit', handleNewVisitorFormSubmit);
-  // console.log('JavaScript loaded');
-  // const button = document.querySelector('#delete');
-  // button.addEventListener('click', handleDelleteButtonClick);
+  console.log('JavaScript loaded');
+
+  const button = document.querySelector('#delete');
+  button.addEventListener('click', handleDeleteButtonClick);
 
 });
 
@@ -38,18 +39,21 @@ const handleNewVisitorFormSubmit = function (event) {
   const firstName = event.target.first_name.value
   const lastName = event.target.last_name.value
   const address = event.target.address.value
-  const beer = event.target.beer.value
+  const beers = event.target.beers.value
   const quontity = event.target.quantity.value
   const payment = event.target.payment.value
   const date = event.target.date.value
 
-  // const time = document.querySelector('#txt').textContent;
-
 
   paragraphResult.textContent = `Name: ${firstName} ${lastName} |
-  Address: ${address} | Beer: ${beer} | Quantity: ${quontity} | Payment: ${payment} | Date: ${date} | Time: ${time}; `
+  Address: ${address} | Beers: ${beers} | Quantity: ${quontity} | Payment: ${payment} | Date: ${date}; `
   const added = document.querySelector('#added');
   added.appendChild(paragraphResult);
   document.querySelector('#new-visitor-form');
 
+};
+
+const handleDeleteButtonClick = function(){
+  const para = document.querySelector('#added');
+  para.textContent = "";
 };
