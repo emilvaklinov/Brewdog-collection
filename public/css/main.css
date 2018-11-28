@@ -33,7 +33,7 @@ select#beers {
 }
 
 h5 {
-  font-family: fantasy;
+  font-family: optima, sans-serif;
   color: black;
   background-color: white;
   background-clip: content-box;
